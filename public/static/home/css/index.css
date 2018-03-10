@@ -1,0 +1,603 @@
+@charset "UTF-8";
+html, body {
+  position: relative;
+  height: 100%;
+  font-family: "微软雅黑";
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+#phoneCome {
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/phoneBkg.jpg) no-repeat;
+  background-size: cover;
+  position: relative; }
+  #phoneCome .head {
+    width: 100%; }
+    #phoneCome .head > div:nth-child(1) {
+      width: 23.75%;
+      margin: 0.5rem 6% 0.5rem 8%; }
+    #phoneCome .head > div:nth-child(2) {
+      width: 60%;
+      color: white; }
+      #phoneCome .head > div:nth-child(2) .name {
+        font-size: 0.32rem;
+        margin-top: 0.8rem; }
+      #phoneCome .head > div:nth-child(2) .chat {
+        font-size: 0.28rem;
+        line-height: 0.55rem; }
+    #phoneCome .head img {
+      width: 100%; }
+  #phoneCome .twoBox {
+    width: 19.375%;
+    position: absolute;
+    bottom: 0;
+    left: 18%; }
+    #phoneCome .twoBox a {
+      width: 100%;
+      display: block; }
+      #phoneCome .twoBox a img {
+        width: 100%; }
+    #phoneCome .twoBox p {
+      font-size: 0.26rem;
+      color: white;
+      text-align: center;
+      line-height: 1.0rem; }
+  #phoneCome .accept {
+    left: auto;
+    right: 18% !important; }
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none; }
+  .video video {
+    width: 100%;
+    height: 100%; }
+  .video #over {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.9rem;
+    padding: 0.15rem 0.3rem;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 0.32rem;
+    background-color: #42413f;
+    margin-bottom: 0.1rem; }
+
+#timeCount {
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/time.jpg) no-repeat;
+  background-size: cover; }
+  #timeCount .logo {
+    width: 50%;
+    padding: 0.3rem 0 0 0.3rem; }
+  #timeCount .title {
+    width: 80.13%;
+    margin: 0 auto;
+    margin-top: 0.8rem; }
+  #timeCount .timeTitle {
+    text-align: center;
+    font-size: 0.28rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 2px; }
+  #timeCount .timeBox {
+    width: 73.87%;
+    margin: 0 auto; }
+    #timeCount .timeBox > .floatl {
+      width: 23.2%;
+      margin-right: 2.4%;
+      height: 1.2rem;
+      background-color: #ece8e2;
+      border-radius: 5px; }
+      #timeCount .timeBox > .floatl p {
+        text-align: center;
+        color: #5f4572;
+        font-weight: bold; }
+      #timeCount .timeBox > .floatl p:nth-child(1) {
+        font-size: 0.28rem;
+        margin-top: 0.1rem; }
+      #timeCount .timeBox > .floatl p:nth-child(2) {
+        font-size: 0.6rem;
+        line-height: 0.6rem; }
+    #timeCount .timeBox > .floatl:nth-child(4) {
+      margin-right: 0; }
+  #timeCount .address p {
+    text-align: center;
+    color: white; }
+  #timeCount .address p:nth-child(1) {
+    font-size: 0.26rem;
+    line-height: 0.5rem;
+    margin-top: 0.8rem; }
+  #timeCount .address p:nth-child(2) {
+    font-size: 0.3rem; }
+  #timeCount .nextBox {
+    position: absolute;
+    left: 0;
+    bottom: 0.8rem;
+    width: 100%; }
+    #timeCount .nextBox a {
+      width: 5.6%;
+      margin: 0 auto;
+      display: block; }
+      #timeCount .nextBox a img {
+        width: 100%; }
+
+#applyStart {
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/indexBox.jpg) no-repeat;
+  background-size: cover; }
+  #applyStart .alogo {
+    width: 50%;
+    padding: 0.3rem 0 0 0.3rem;
+    display: none; }
+  #applyStart .atitle {
+    width: 80.13%;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    display: none; }
+
+.btn, .return {
+  position: absolute;
+  left: 11%;
+  bottom: 0.8rem;
+  width: 78%;
+  display: none; }
+  .btn button, .return button {
+    display: block;
+    width: 100%;
+    height: 0.8rem;
+    background: url(http://hyimg.hengdikeji.com/yajie/btn.png) no-repeat;
+    background-size: 100% 100%;
+    color: #5f4572;
+    font-size: 0.32rem;
+    font-weight: bold; }
+
+#apply {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/applyBkg.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  #apply .applyBox {
+    width: 100%; }
+    #apply .applyBox > ul li {
+      position: relative;
+      height: 0.8rem;
+      margin-left: 11%;
+      border-radius: 2px;
+      width: 78%;
+      border: 1px solid #a0a0a0;
+      margin-bottom: 0.15rem;
+      background: url(http://hyimg.hengdikeji.com/yajie/more.png) no-repeat 97.5% center;
+      background-size: auto 0.22rem;
+      background-color: white; }
+      #apply .applyBox > ul li input {
+        display: block;
+        height: 100%;
+        width: 78%;
+        margin-left: 15%;
+        border: 0;
+        outline: hidden;
+        line-height: 0.8rem;
+        font-size: 0.24rem;
+        color: #5f4572; }
+      #apply .applyBox > ul li input::-webkit-input-placeholder {
+        color: #ada0b7; }
+      #apply .applyBox > ul li input::-ms-input-placeholder {
+        color: #ada0b7; }
+      #apply .applyBox > ul li input::-moz-placeholder {
+        color: #ada0b7; }
+      #apply .applyBox > ul li select {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        color: #5f4572;
+        line-height: 0.8rem; }
+      #apply .applyBox > ul li img {
+        position: absolute;
+        top: 0.24rem;
+        left: 0.24rem;
+        height: 0.32rem; }
+      #apply .applyBox > ul li .phoneImg {
+        height: 0.34rem;
+        left: 0.28rem; }
+      #apply .applyBox > ul li .sexImg {
+        left: 0.22rem; }
+      #apply .applyBox > ul li .nameImg {
+        left: 0.26rem; }
+    #apply .applyBox > ul .noBack {
+      background-image: none; }
+    #apply .applyBox .headImg {
+      width: 100%; }
+      #apply .applyBox .headImg .headBox {
+        width: 24%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden; }
+        #apply .applyBox .headImg .headBox img {
+          width: 100%; }
+        #apply .applyBox .headImg .headBox .boximg {
+          opacity: 0; }
+        #apply .applyBox .headImg .headBox .imgBox {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1; }
+        #apply .applyBox .headImg .headBox input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          opacity: 0; }
+      #apply .applyBox .headImg .upPhoto {
+        text-align: center;
+        font-size: 0.32rem;
+        color: white;
+        letter-spacing: 2px;
+        line-height: 0.6rem;
+        margin-top: 0.2rem; }
+      #apply .applyBox .headImg .tips {
+        text-align: center;
+        font-size: 0.24rem;
+        color: #d7b27d;
+        margin-bottom: 0.6rem; }
+    #apply .applyBox .submit {
+      width: 78%;
+      margin: 0 auto;
+      margin-top: 0.6rem; }
+      #apply .applyBox .submit button {
+        display: block;
+        width: 100%;
+        height: 0.8rem;
+        background: url(http://hyimg.hengdikeji.com/yajie/btn.png) no-repeat;
+        background-size: 100% 100%;
+        color: #5f4572;
+        font-size: 0.32rem; }
+
+#hand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/handBkg.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  #hand .light {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  #hand .now {
+    position: absolute;
+    left: 11%;
+    top: 16%;
+    width: 64.53%;
+    display: none; }
+  #hand .input {
+    position: absolute;
+    left: 12%;
+    top: 16%;
+    width: 49.47%; }
+  #hand .rBox {
+    position: absolute;
+    top: 9.2%;
+    left: 37%;
+    height: 4.2%; }
+    #hand .rBox > img {
+      height: 100%; }
+  #hand > p {
+    font-size: 0.26rem;
+    position: absolute;
+    left: 13%;
+    top: 9.5%;
+    color: #553968;
+    font-weight: bold; }
+  #hand .circleOut {
+    width: 83.86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    position: relative;
+    margin-top: 0.6rem; }
+    #hand .circleOut > img {
+      width: 100%; }
+    #hand .circleOut .circleIn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column; }
+      #hand .circleOut .circleIn .circleInBox {
+        position: relative;
+        width: 72.46%; }
+        #hand .circleOut .circleIn .circleInBox > img {
+          width: 100%; }
+        #hand .circleOut .circleIn .circleInBox .handBox {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          display: -webkit-flex;
+          -webkit-align-items: center;
+          -webkit-justify-content: center;
+          -webkit-flex-direction: column; }
+          #hand .circleOut .circleIn .circleInBox .handBox .hanDinBox {
+            width: 80%;
+            margin-top: 4.5px;
+            overflow: hidden;
+            border-radius: 50%;
+            position: relative; }
+            #hand .circleOut .circleIn .circleInBox .handBox .hanDinBox > img {
+              width: 100%; }
+            #hand .circleOut .circleIn .circleInBox .handBox .hanDinBox .sao {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              border-radius: 50%; }
+              #hand .circleOut .circleIn .circleInBox .handBox .hanDinBox .sao > img {
+                width: 100%;
+                position: absolute;
+                bottom: 100%;
+                left: 0; }
+            #hand .circleOut .circleIn .circleInBox .handBox .hanDinBox #press {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 10;
+              opacity: 0; }
+
+#success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(http://hyimg.hengdikeji.com/yajie/successBkg.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: none; }
+  #success ul li {
+    width: 100%; }
+  #success .slogo {
+    width: 50%;
+    padding: 0.3rem 0 0 0.3rem;
+    display: none; }
+  #success .stitle {
+    width: 80.13%;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    display: none; }
+  #success .wxHead {
+    width: 28%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: none; }
+    #success .wxHead .wxHeadIn {
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid #afa2b9; }
+      #success .wxHead .wxHeadIn img {
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid #6d567f; }
+  #success .namestore {
+    display: none;
+    font-size: 0.28rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color: white; }
+  #success .sBox {
+    display: none;
+    position: absolute;
+    bottom: 2.0rem;
+    left: 0; }
+    #success .sBox .ssTitle {
+      width: 51.33%;
+      margin: 0 auto; }
+      #success .sBox .ssTitle img {
+        width: 100%; }
+    #success .sBox p {
+      font-size: 0.24rem;
+      text-align: center;
+      color: #d7b27d;
+      line-height: 0.5rem; }
+
+#reload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: url(../img/applyBkg.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+#reload ul {
+  width: 100%; }
+#reload ul li:nth-child(2) {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  height: 0.15rem;
+  margin-top: 0.2rem;
+  margin-left: 16%;
+  background-color: #5f4572; }
+#reload ul li:nth-child(2) .upOut {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.2rem;
+  position: relative;
+  background-color: #1c1025; }
+#reload ul li:nth-child(2) .up {
+  background-color: #d7b27d;
+  height: 100%;
+  width: 0%; }
+#reload ul li:nth-child(2) p {
+  position: absolute;
+  left: 102%;
+  top: -0.1rem;
+  font-size: 0.2rem;
+  color: white; }
+#reload img {
+  width: 50%;
+  margin: 0 auto; }
+
+#exchange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  background: url(../img/applyBkg.jpg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+#exchange .messageBox {
+  width: 77.6%;
+  margin: 0 auto;
+  background-color: #ece8e2;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0 0 0.6rem; }
+#exchange .messageBox ul {
+  width: 92%;
+  margin: 0 auto; }
+#exchange .messageBox ul li {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 0.1rem;
+  padding-top: 0.4rem; }
+#exchange .messageBox ul p {
+  text-indent: 0.2rem;
+  font-size: 0.26rem; }
+#exchange .messageBox ul p span {
+  color: #adabae;
+  display: inline-block;
+  padding: 0 0.2rem; }
+#exchange .messageBox ul li:nth-child(1) {
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  position: relative; }
+#exchange .messageBox ul li:nth-child(1) .hBox {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  border: 1px solid #5f4572;
+  border-radius: 50%; }
+#exchange .messageBox ul li:nth-child(1) .hBox img {
+  width: 100%; }
+#exchange .messageBox ul li:nth-child(1) p {
+  text-indent: 0rem; }
+#exchange .messageBox ul li:nth-child(2) p {
+  background: url(../img/p1.png) no-repeat 0.18rem center;
+  background-size: auto 0.3rem; }
+#exchange .messageBox ul li:nth-child(3) p {
+  background: url(../img/p2.png) no-repeat 0.18rem center;
+  background-size: auto 0.3rem; }
+#exchange .messageBox ul li:nth-child(4) p {
+  background: url(../img/p3.png) no-repeat 0.18rem center;
+  background-size: auto 0.3rem; }
+#exchange .messageBox ul li:nth-child(5) p {
+  background: url(../img/p4.png) no-repeat 0.18rem center;
+  background-size: auto 0.3rem; }
+#exchange .messageBox ul li:nth-child(6) p {
+  background: url(../img/p5.png) no-repeat 0.18rem center;
+  background-size: auto 0.3rem; }
+#exchange .twoBtn {
+  width: 77.6%;
+  margin: 0 auto;
+  margin-top: 0.4rem; }
+#exchange .twoBtn button {
+  display: block;
+  width: 45%;
+  height: 0.8rem;
+  border-radius: 5px;
+  overflow: hidden;
+  background: url(../img/btn.png) no-repeat;
+  background-size: 100% 100%;
+  color: #5f4572;
+  font-size: 0.32rem;
+  font-weight: bold; }
+#exchange .twoBtn button:nth-child(1) {
+  margin-right: 10%; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,83 @@
+<extend name="common/common"></extend>
+<block name="body">
+
+    <include file="common/nav"/>
+    <div class="x-body">
+        <form action="" method="post" class="layui-form layui-form-pane">
+            <div class="layui-inline">
+                <label class="layui-form-label">开始时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" name="begin_time" id="begin_time" value='<{$system.begin_time}>' placeholder="年-月-日">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label>&nbsp;&nbsp;-&nbsp;&nbsp;</label>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">结束时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" name="end_time" id="end_time" value='<{$system.end_time}>' placeholder="年-月-日">
+                </div>
+            </div>
+
+            <div class="layui-form-item" style="margin-top: 15px">
+                <label  class="layui-form-label">系统公告</label>
+                <div class="layui-input-inline">
+                    <input type="text"  name="notice" required="" value='<{$system.notice}>' lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label  class="layui-form-label">活动协议</label>
+                <div class="layui-input-block">
+                    <textarea id="des" name="agree" lay-verify="required" placeholder="" style="height: 300px"><{$system.agree}></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <button class="layui-btn" lay-submit="" lay-filter="add">设置</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript">
+        var ue = UE.getEditor('ued');
+        var ue = UE.getEditor('des');
+    </script>
+    <script type="text/javascript">
+        layui.use(['layer','laydate','form'], function(){
+            $ = layui.jquery;
+            var layer = layui.layer,laydate = layui.laydate,form = layui.form;
+
+            //墨绿主题
+            laydate.render({
+                elem: '#begin_time'
+                ,theme: 'molv'
+            });
+
+            laydate.render({
+                elem: '#end_time'
+                ,theme: 'molv'
+            });
+
+            //监听提交
+            form.on('submit(add)', function(data){
+                $.post("<{:url('save')}>",data.field,function(re){
+                    if(re.code == 1){
+                        layer.msg('设置成功', {icon: 1 ,time:3000},function(){
+                            window.location.reload();
+                        });
+                    }else{
+                        layer.msg('设置失败', {icon: 5 ,time:3000},function(){
+                            window.location.reload();
+                        });
+                    }
+                });
+            });
+
+
+        });
+    </script>
+    </body>
+</block>

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>测试</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        body{
+            font-size: 20px;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+<body>
+<input type="hidden" name="__token__" value="<{$token}>">
+    <p onclick="lottery()">抽奖</p>
+
+    <p onclick="share()">分享</p>
+</body>
+<script type="text/javascript">
+    function lottery(){
+        var url="<{:url('index/lottery/lottery1')}>";
+        var token=$('[name="__token__"]').val();
+        $.ajax({
+            type:'POST',
+            url:url,
+            data:{"__toen__":token},
+            dataType:'JSON',
+            success:function(res){
+                $('[name="__token__"]').attr('value',res.token);
+                if(res.code==0){
+                    alert(res.msg);
+                }else{
+
+                }
+            },
+            error:function(){
+                alert('网络错误');
+            }
+
+        })
+    }
+    function share() {
+        var url="<{:url('index/index/share')}>";
+        var token=$('[name="__token__"]').val();
+        $.ajax({
+            type:'POST',
+            url:url,
+            data:{"__toen__":token,"group":2},
+            dataType:'JSON',
+            success:function(res){
+                $('[name="__token__"]').attr('value',res.token);
+                if(res.code==0){
+                    alert(res.msg);
+                }else{
+
+                }
+            },
+            error:function(){
+                alert('网络错误');
+            }
+
+        })
+    }
+</script>
+</html>

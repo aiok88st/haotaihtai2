@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection"/>
+		<title>好太太</title>
+		<link rel="stylesheet" href="__STYLE__/css/reset.css" />
+		<link rel="stylesheet" href="__STYLE__/css/demo.css" />
+		<link rel="stylesheet" href="__STYLE__/css/ydui.css" />
+		<link rel="stylesheet" href="__STYLE__/css/award.css" />
+		<script type="text/javascript" src="__STYLE__/js/rem.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            var APP_URL="__STYLE__";
+        </script>
+        <style type="text/css">
+            #addres_li{
+                height:0 !important;
+            }
+        </style>
+	</head>
+	<body>
+		<div id="award">
+			<ul>
+				<li>
+					<p>恭喜您！</p>
+				</li>
+				<li>
+					<p>获得好太太<{$data['prize']['name']}></p>
+				</li>
+				<li>
+					<img src="__STYLE__/img/<{$data['prize']['img']}>" />
+				</li>
+				<li>
+					<div class="floatl">
+						<p>姓名:</p>
+						<input type="text" name="name" id="name" value="" placeholder="姓名"/>
+					</div>
+					<div class="floatl">
+						<p>手机:</p>
+						<input type="text" name="mobile" id="mobie" value="" maxlength="11" placeholder="11位手机号码"/>
+					</div>
+					<div class="clearl"></div>
+				</li>
+				<li>
+					<p>城市:</p>
+					<input type="" name="city" id="city" value="" placeholder="省/市/区"/>
+				</li>
+                <if condition="!in_array($prize_id,[10,11])">
+                    <li>
+                 <else />
+				<li id="addres_li">
+                </if>
+                    <if condition="!in_array($prize_id,[10,11])">
+                        <p>地址:</p>
+                        <textarea  id="addres"  placeholder="请填写您的具体的收货地址"></textarea>
+                    </if>
+
+				</li>
+
+
+                    <li>
+                        <if condition="!in_array($prize_id,[10,11])">
+                         <p>温馨提示：请在12月31日前在活动的礼品中心填写奖品邮寄地址信息，否则视为放弃领奖。如填写有误，将无法领取奖品！</p>
+                       </if>
+
+                    </li>
+
+
+				<li>
+
+                    <a href="javascript:;" onclick="submit()"><img src="__STYLE__/img/submit.png"/></a>
+
+                    <a href="###" id="return"><img src="__STYLE__/img/return.png"/></a>
+
+					<div class="floatl"></div>
+
+				</li>
+			</ul>
+		</div>
+		<!--弹窗-->
+
+		<div id="popWin" style="display: none">
+			<div class="popWin">
+				<img src="__STYLE__/img/popWindow.png" />
+				<div class="popIn">
+					<ul>
+						<li id="msgLi">
+							<p></p>
+						</li>
+						<li>
+						    <a href="###" class="confirm"><img src="__STYLE__/img/confirm.png"/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="__STYLE__/js/ydui.citys.js" ></script>
+		<script type="text/javascript" src="__STYLE__/js/ydui.flexible.js" ></script>
+		<script type="text/javascript" src="__STYLE__/js/ydui.js" ></script>
+
+		
+
+		<script>
+			//弹窗
+			 function popWin(text1,align,size,asize,at,call){
+			 	/*
+			 	 * text1为第一句提示语
+		
+			 	*/
+			 	$('body').append('<div id="popWin"><div class="popWin"><img src="__STYLE__/img/popWindow.png" /><div class="popIn"><ul><li><p style="text-align:'+align+';font-size:'+size+'rem">'+text1+'</p></li><li><p></p></li><li><a style="width:'+asize+'%;margin-top:'+at+'rem;" href="javascript:;" class="confirm"><img src="__STYLE__/img/confirm.png"/></a></li></ul></div></div></div>');
+                 $('body').on('click','.confirm',function(){
+                     $('#popWin').remove();
+                     if(typeof (call)=="function"){
+                         call();
+                     }
+
+                 })
+
+                }
+			
+			
+			function popWin1(text1,align,size,asize,at,call){
+			 	/*
+			 	 * text1为第一句提示语
+		
+			 	*/
+			 	$('body').append('<div id="popWin"><div class="popWin"><img src="__STYLE__/img/popWindow.png" /><div class="popIn"><ul><li><p style="text-align:'+align+';font-size:'+size+'rem">'+text1+'</p></li><li><p></p></li><li style="width: 90%;margin-left: 8%;"><a  style=" float: left;margin: 0% 5% 0% 2%;width:'+asize+'%;margin-top:'+at+'rem;" href="javascript:;" class="confirm"><img src="__STYLE__/img/confirm.png"/></a><a class="rd" style="float: left;margin: 0% 2% 0% 5%;width:'+asize+'%;margin-top:'+at+'rem;" href="javascript:;"><img src="__STYLE__/img/q.png"/></a></li></ul></div></div></div>');
+                 $('body').on('click','.confirm',function(){
+                     $('#popWin').remove();
+
+                     if(typeof (call)=="function"){
+                         call();
+                     }
+
+                 });
+                 $('body').on('click','.rd',function(){
+                     $('#popWin').remove();
+                  });
+
+                }
+			
+
+
+			!function () {
+		        var $target = $('#city');
+		
+		        $target.citySelect();
+		
+		        $target.on('click', function (event) {
+		            event.stopPropagation();
+		            $target.citySelect('open');
+		        });
+		
+		        $target.on('done.ydui.cityselect', function (ret) {
+		            $(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+		        });
+		    }();	
+		    $('.confirm').bind('click',function(){
+		    	$('#popWin').hide();
+		    });
+
+		    function submit(){
+                var name=$('#name').val();
+                var mobile=$('#mobie').val();
+                var city=$('#city').val();
+                var addres=$('#addres').val();
+		        if(name.length<2 || name.length>6) {
+                    new popWin("请填写2-6个字的姓名",'center',0.36,50,0.4);
+                    return false;
+                }
+                if(!(/^1[34578]\d{9}$/.test(mobile))){
+                    new popWin("手机号码格式错误",'center',0.36,50,0.4);
+                    return false;
+                }
+                if(city.length <=0){
+                    new popWin("请选择您的城市",'center',0.36,50,0.4);
+                    return false;
+                }
+                <if condition="!in_array($prize_id,[10,11])">
+                    if(addres.length <=0){
+                        new popWin("详细地址不能为空",'center',0.36,50,0.4);
+                        return false;
+                    }
+
+                    new popWin1("请认真核对邮寄信息，若信息有误，将无法领取奖品 <br /> 姓名："+name+"&nbsp;"+'<br/>电话：'+mobile+"<br/>"+"地址："+city+'&nbsp;'+addres,'left',0.24,40,0.2,function() {
+                        var url="<{:url('index/index/addres')}>";
+                        $.post(url,{
+                            "name":name,
+                            "mobile":mobile,
+                            "city":city,
+                            "addres":addres,
+                            "id":'<{$data['id']}>',
+                            "prize_id":'<{$prize_id}>',
+                        },function(res){
+
+                            if(res.code==1){
+                                window.parent.$('iframe').attr('src','').hide();
+                                window.parent.$('#hotata').show();
+                                if(window.parent.ha_geft==2){
+                                    window.parent.giftsCenter();
+                                }
+
+                            }else{
+                                new popWin(res.msg);
+                            }
+
+                        },"JSON")
+                    });
+                <else />
+                    new popWin("是否使用",'center',0.44,60,0.5,function () {
+                        var url="<{:url('index/index/addres')}>";
+                        $.post(url,{
+                            "name":name,
+                            "mobile":mobile,
+                            "city":city,
+                            "addres":addres,
+                            "id":'<{$data['id']}>',
+                            "prize_id":'<{$prize_id}>',
+                        },function(res){
+//                            $('#popWin').show();
+//                            $('#msgLi').find('p').text(res.msg);
+                            $('#popWin').remove();
+                            if(res.code==1){
+                                window.parent.$('iframe').attr('src','').hide();
+                                window.parent.$('#hotata').show();
+                                if(window.parent.ha_geft==2){
+                                    window.parent.giftsCenter();
+                                }
+
+                            }else{
+                                new popWin(res.msg,'center',0.44,60,0.5,false)
+                            };
+
+                        },"JSON")
+                    });
+                </if>
+
+
+            }
+            $('#city').bind('click',function(){
+                document.getElementById('city').blur();
+            });
+            $('#city').focusin('click',function(){
+                document.getElementById('city').blur();
+            });
+		    $(document).ready(function () {
+			　　$('body').height($(window).clientHeight);
+			});
+			$('#return').on('click',function(){
+				window.parent.$('iframe').hide();
+				window.parent.$('#hotata').show();
+
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection"/>
+<!--		<title>呼朋唤友领取好太太上市红利</title>-->
+		<title>贺好太太集团上市 邀您一起领好礼</title>
+
+		<script type="text/javascript" src="__STYLE__/js/lufylegend-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="__STYLE__/js/lufylegend.ui-0.14.1.min.js" ></script>
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript">
+        	//__STYLE__/
+            var APP_URL="__STYLE__";
+//            var APP_LINK="http://127.0.0.1/haotaitai/public/listing.php";
+            var APP_LINK="https://haotaitai.hengdikeji.com/listing.php";
+            var ha_geft=1;
+            var fxTitle="贺好太太集团上市 邀您一起领好礼";
+            var fxDesc="四海欢腾，共庆好太太集团主板上市，红利大派送";
+            var fxLink="https://haotaitai.hengdikeji.com/listing.php/index/index/index";
+            var fxImg="https://haotaitai.hengdikeji.com/template/index/index/img/fxt.png";
+
+            /*通用ajax*/
+            function Ajax(url,method,data,callback){
+                var token=$('[name="__token__"]').val();
+
+                data.__toen__=token;
+                data.rc="<{$cr}>";
+                $.ajax({
+                    type:method,
+                    url:url,
+                    data:data,
+                    dataType:'JSON',
+                    success:function(res){
+                        $('[name="__token__"]').attr('value',res.token);
+                        callback(res);
+
+                    },
+                    error:function(){
+                        alert('网络错误');
+//                        window.location.href="<{:url('index/index')}>";
+                    }
+                })
+            }
+
+        </script>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background:url(__STYLE__/img/back.jpg) no-repeat;
+				/*background-size: 100% 100%;*/
+			}
+			#video{
+				position:fixed;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				display: none;
+				z-index: 100;
+				object-position: center top;
+			}
+			iframe{
+				position: fixed;
+				z-index: 999;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				border: 0;
+				display: none;
+			}
+			#videoBack{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			    background:url(__STYLE__/img/back.jpg) no-repeat;
+			    background-size: cover;
+			    z-index: 1000;
+			    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				display: -webkit-flex;
+				-webkit-align-items: center;
+				-webkit-justify-content: center;
+				-webkit-flex-direction: column;
+			}
+			#videoBack img{
+				width: 64px;
+				opacity: 0.25;
+				-ms-transition: opacity 0.5s;
+				-webkit-transition: opacity 0.5s;
+				-moz-transition: opacity 0.5s;
+				transition: opacity 0.5s;
+			}
+			#videoBack p{
+				font-size: 14px;
+				text-align: center;
+				color: #faf2c1;
+				opacity: 0.8;
+				line-height: 28px;
+			}
+			
+		</style>
+	</head>
+	<body>
+    <div style="display: none">
+        <script src="https://s22.cnzz.com/z_stat.php?id=1271253233&web_id=1271253233" language="JavaScript"></script>
+    </div>
+    <input type="hidden" name="__token__" value="<{$token}>">
+		<div id="hotata"></div>
+		<video
+			id="video" 
+			src="__STYLE__/hotata.mp4"
+			preload="auto" 
+			webkit-playsinline="true" 
+			playsinline="true" 
+			x-webkit-airplay="allow" 
+			x5-video-player-type="h5" 
+			x5-video-player-fullscreen="true" 
+			x5-video-orientation="portraint"
+			style="object-fit:fill"
+		></video>
+
+		<div id="videoBack" style="display: none;">
+
+			<img src="__STYLE__/img/hands.png" />
+
+			<p>点击解锁更多惊喜</p>
+		</div>
+
+		<audio id="gong"  preload  src="__STYLE__/music/gong.mp3" hidden="hidden"></audio >
+		<audio id="hj"  preload  src="__STYLE__/music/hj.mp3" hidden="hidden"></audio >
+		<audio id="t"  preload  src="__STYLE__/music/t.mp3" hidden="hidden"></audio >
+		<audio id="a"  preload  src="__STYLE__/music/a.mp3" hidden="hidden"></audio >
+        <audio id="b"  preload  src="__STYLE__/music/b.mp3" hidden="hidden"></audio >
+
+		<audio id="bg" autoplay="autoplay" loop="loop" preload  src="__STYLE__/music/bgm.mp3" hidden="hidden"></audio >
+
+		<script>
+			function audioAutoPlay(id,v){
+			    var audio = document.getElementById(id);
+			    audio.play();
+			    if(v==0)
+			    {
+			    	audio.pause();
+			    }
+			    document.addEventListener("WeixinJSBridgeReady", function () {
+			            audio.play();
+			            if(v==0)
+					    {
+					    	audio.pause();
+					    }
+			    }, false);
+			}
+			audioAutoPlay('bg');
+			audioAutoPlay('a',0);
+			audioAutoPlay('t',0);
+			audioAutoPlay('b',0);
+			audioAutoPlay('gong',0);
+			audioAutoPlay('video',0);
+			audioAutoPlay('hj',0);
+		</script>
+
+        <iframe src="<{:url('index/video')}>" id="videoShow" name="videoshow"></iframe>
+		<iframe src="" id="shuibian"></iframe>
+		<script type="text/javascript" src="__STYLE__/js/resource.js?v=27" ></script>
+		<script type="text/javascript" src="__STYLE__/js/bemzjGame.js" ></script>
+		<script type="text/javascript" src="__STYLE__/js/main.js?v=27" ></script>
+    
+        <script type="text/javascript">
+            document.getElementById('video').addEventListener("x5videoexitfullscreen",function(){
+                $('#video').fadeOut(100);
+                document.getElementById('bg').play();
+                $('#hotata').css('z-index',1000);
+                $('#hotata').fadeIn(100,function(){
+                    homePage();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+
+            $.get('https://haotaitai.hengdikeji.com/jssdk',function(res){
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId:''+res.appId+'', // 必填，公众号的唯一标识
+
+                    timestamp: ''+res.timestamp+'', // 必填，生成签名的时间戳
+
+                    nonceStr:''+res.nonceStr+'', // 必填，生成签名的随机串
+
+                    signature:''+res.signature+'',// 必填，签名，见附录1
+
+                    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+
+                });
+                doShare();
+            },"JSON");
+            function doShare(){
+                wx.ready(function () {
+                    wx.onMenuShareTimeline({
+                        title: fxTitle,
+                        link:  fxLink,
+                        imgUrl: fxImg,
+
+                        success: function (res) {
+                            share(2);
+                        },
+                        cancel: function (res) {
+
+                        },
+                        fail: function (res) {
+                            alert(JSON.stringify(res));
+                        }
+                    });
+                    wx.onMenuShareAppMessage({
+                        title: window.fxTitle,
+                        link: window.fxLink,
+                        desc:window.fxDesc,
+                        imgUrl:window.fxImg,
+                        success: function (res) {
+                            share(1);
+                        },
+                        cancel: function (res) {
+
+                        },
+                        fail: function (res) {
+                            alert(JSON.stringify(res));
+                        }
+                    });
+                });
+            }
+
+            function share(type){
+                var url="<{:url('index/index/share')}>";
+                Ajax(url,'POST',{"group":type},function(res){
+                    popWin('温馨提示',res.msg);
+                });
+            }
+        </script>
+
+
+	</body>
+</html>

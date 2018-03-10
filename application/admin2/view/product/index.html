@@ -1,0 +1,96 @@
+<extend name="common/common"></extend>
+<block name="body">
+
+    <include file="common/nav"/>
+    <div class="x-body">
+        <div class="layui-row">
+            <form method="get" action="<{:url('Product/index')}>" class="layui-form layui-col-md12 x-so">
+                <div class="layui-input-inline">
+                    <input type="text" name="key" value="<{$sreach['key']}>" placeholder="请输入换购券名称" autocomplete="off" class="layui-input">
+                </div>
+                <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+            </form>
+        </div>
+        <xblock>
+            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+            <button class="layui-btn" onclick="x_admin_show('添加换购券','<{:url('Product/create')}>')"><i class="layui-icon"></i>添加</button>
+
+        </xblock>
+
+        <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+        <table class="layui-table">
+            <thead>
+            <tr>
+                <th>
+                    <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+                </th>
+                <th>图片</th>
+                <th>换购券名称</th>
+                <th>价格</th>
+                <th>库存</th>
+                <th>简介</th>
+                <th>创建时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>
+                    <td>
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<{$vo['id']}>'><i class="layui-icon">&#xe605;</i></div>
+                    </td>
+                    <td><img src="__APP__<{$vo['img']}>" width="100px"/></td>
+                    <td><{$vo['name']}></td>
+                    <td><{$vo['price']}></td>
+                    <td><{$vo['number']}></td>
+                    <td><{$vo['short']}></td>
+                    <td><{$vo.add_time|date="Y-m-d H:i:s",###}></td>
+                    <td class="td-manage" >
+                        <a title="编辑"  onclick="x_admin_show('编辑换购券','<{:url('Product/edit',['id'=>$vo['id']])}>')" href="javascript:;">
+                            编辑
+                        </a>
+                        <a title="删除" onclick="delAll('<{$vo['id']}>')" href="javascript:;">
+                            删除
+                        </a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+
+        <div class="page">
+            <{$list->render()}>
+        </div>
+    </div>
+    <script type="text/javascript">
+        layui.use(['layer'], function(){
+            $ = layui.jquery;
+            var layer = layui.layer;
+
+        });
+
+        function delAll(argument) {
+            var data;
+            if(argument){
+                data =[argument];
+            }else{
+                data = tableCheck.getData();
+            }
+            var token=$('[name="__token__"]').val();
+            layer.confirm('确认删除这条数据？',function(index){
+                //捉到所有被选中的，发异步进行删除
+                //捉到所有被选中的，发异步进行删除
+                var url="<{:url('Product/delete')}>";
+                AjaxP(url,'POST',{"ids":data,"__token__":token},function(res){
+                    if(res.code==1){
+                        deleCall();
+                    }
+
+                });
+
+            });
+        }
+
+    </script>
+    </body>
+</block>

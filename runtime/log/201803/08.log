@@ -1,0 +1,524 @@
+[ 2018-03-08T00:49:55+08:00 ] 120.24.212.12 121.31.251.178 GET /listing.php/index/index/index?from=timeline
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=timeline [运行时间：0.019422s][吞吐率：51.49req/s] [内存消耗：1,655.71kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T00:49:55+08:00 ] 120.24.212.12 121.31.251.178 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017954s][吞吐率：55.70req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T00:56:53+08:00 ] 120.24.212.12 110.190.140.157 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.019261s][吞吐率：51.92req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T00:56:53+08:00 ] 120.24.212.12 110.190.140.157 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017747s][吞吐率：56.35req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:14+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/index/index?from=timeline
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=timeline [运行时间：0.019154s][吞吐率：52.21req/s] [内存消耗：1,655.72kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:14+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.021143s][吞吐率：47.30req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:20+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/Weixin/oauth?code=0218ngAY1C3l1U0lqyBY1e1qAY18ngAq&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=0218ngAY1C3l1U0lqyBY1e1qAY18ngAq&state=state [运行时间：0.464431s][吞吐率：2.15req/s] [内存消耗：2,447.52kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:20+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018877s][吞吐率：52.97req/s] [内存消耗：1,634.40kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:20+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.089329s][吞吐率：11.19req/s] [内存消耗：2,511.40kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:21+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/Weixin/oauth?code=081rBecB0hrrXe2oVAeB0z5scB0rBecC&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=081rBecB0hrrXe2oVAeB0z5scB0rBecC&state=state [运行时间：0.018898s][吞吐率：52.92req/s] [内存消耗：1,635.39kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:21+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.032289s][吞吐率：30.97req/s] [内存消耗：2,550.77kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T03:18:22+08:00 ] 120.24.212.12 27.46.128.79 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032469s][吞吐率：30.80req/s] [内存消耗：2,493.94kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:56+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.020357s][吞吐率：49.12req/s] [内存消耗：1,655.13kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:56+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017924s][吞吐率：55.79req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:58+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/Weixin/oauth?code=071Ufag91aQVYP1101j91HPdg91UfagC&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=071Ufag91aQVYP1101j91HPdg91UfagC&state=state [运行时间：0.456268s][吞吐率：2.19req/s] [内存消耗：2,447.52kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:59+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019483s][吞吐率：51.33req/s] [内存消耗：1,634.40kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:59+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.047557s][吞吐率：21.03req/s] [内存消耗：2,511.40kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:59+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.033913s][吞吐率：29.49req/s] [内存消耗：2,550.65kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:59+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/Weixin/oauth?code=0014vqBp0imfuo1fsYxp0gEoBp04vqBj&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=0014vqBp0imfuo1fsYxp0gEoBp04vqBj&state=state [运行时间：0.021538s][吞吐率：46.43req/s] [内存消耗：1,635.39kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:13:59+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.032700s][吞吐率：30.58req/s] [内存消耗：2,550.65kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:14:00+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031687s][吞吐率：31.56req/s] [内存消耗：2,493.94kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:14:00+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.032613s][吞吐率：30.66req/s] [内存消耗：2,550.77kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:14:00+08:00 ] 120.24.212.12 1.28.132.208 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032271s][吞吐率：30.99req/s] [内存消耗：2,493.94kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:24+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.019395s][吞吐率：51.56req/s] [内存消耗：1,655.47kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:24+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018747s][吞吐率：53.34req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:25+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/Weixin/oauth?code=061UBeji1SKLUv0dicgi1FDgji1UBejF&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=061UBeji1SKLUv0dicgi1FDgji1UBejF&state=state [运行时间：0.416955s][吞吐率：2.40req/s] [内存消耗：2,447.54kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:25+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019059s][吞吐率：52.47req/s] [内存消耗：1,634.41kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:25+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.045987s][吞吐率：21.75req/s] [内存消耗：2,511.41kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:36:27+08:00 ] 120.24.212.12 112.224.19.191 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032777s][吞吐率：30.51req/s] [内存消耗：2,493.84kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:25+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.020157s][吞吐率：49.61req/s] [内存消耗：1,655.59kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:25+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017840s][吞吐率：56.05req/s] [内存消耗：1,571.47kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:26+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/Weixin/oauth?code=061iKiHV1rutOW0lZXFV1VrnHV1iKiHZ&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=061iKiHV1rutOW0lZXFV1VrnHV1iKiHZ&state=state [运行时间：0.396931s][吞吐率：2.52req/s] [内存消耗：2,447.65kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:26+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/Weixin/oauth?code=001S9U0g2lkbxC0tNk4g2YTU0g2S9U0e&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=001S9U0g2lkbxC0tNk4g2YTU0g2S9U0e&state=state [运行时间：0.147658s][吞吐率：6.77req/s] [内存消耗：1,635.22kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:26+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.053946s][吞吐率：18.54req/s] [内存消耗：2,511.52kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T08:57:27+08:00 ] 120.24.212.12 182.111.237.171 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.034022s][吞吐率：29.39req/s] [内存消耗：2,493.94kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:20+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.019220s][吞吐率：52.03req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:20+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017956s][吞吐率：55.69req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:23+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/Weixin/oauth?code=011obRvr0OmKCd16uwwr0NEUvr0obRv3&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=011obRvr0OmKCd16uwwr0NEUvr0obRv3&state=state [运行时间：0.464099s][吞吐率：2.15req/s] [内存消耗：2,409.45kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:23+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018613s][吞吐率：53.73req/s] [内存消耗：1,634.34kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:23+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.045384s][吞吐率：22.03req/s] [内存消耗：2,511.59kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:29:25+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031168s][吞吐率：32.08req/s] [内存消耗：2,493.78kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:30:02+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.043217s][吞吐率：23.14req/s] [内存消耗：2,539.41kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:30:35+08:00 ] 120.24.212.12 183.40.213.162 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.072675s][吞吐率：13.76req/s] [内存消耗：2,469.25kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:30:45+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/gift
+[ log ] haotaitai.hengdikeji.com/listing.php/gift [运行时间：0.080269s][吞吐率：12.46req/s] [内存消耗：2,529.64kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:31:01+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.033111s][吞吐率：30.20req/s] [内存消耗：2,550.87kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:31:02+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.033387s][吞吐率：29.95req/s] [内存消耗：2,494.03kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:31:23+08:00 ] 120.24.212.12 183.40.213.162 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.042420s][吞吐率：23.57req/s] [内存消耗：2,539.54kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:29+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.024903s][吞吐率：40.16req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:29+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018392s][吞吐率：54.37req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:31+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/Weixin/oauth?code=071xFPjR1cjyK91Op3mR1Cr5kR1xFPjV&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=071xFPjR1cjyK91Op3mR1Cr5kR1xFPjV&state=state [运行时间：0.483482s][吞吐率：2.07req/s] [内存消耗：2,409.59kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:31+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019390s][吞吐率：51.57req/s] [内存消耗：1,634.42kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:31+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.073866s][吞吐率：13.54req/s] [内存消耗：2,511.68kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T09:52:32+08:00 ] 120.24.212.12 36.1.65.143 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031785s][吞吐率：31.46req/s] [内存消耗：2,493.95kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:44+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.020030s][吞吐率：49.93req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:44+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019637s][吞吐率：50.92req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:48+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/Weixin/oauth?code=0718PzXK0ZmWG72k4sXK0mwCXK08PzXu&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=0718PzXK0ZmWG72k4sXK0mwCXK08PzXu&state=state [运行时间：0.550393s][吞吐率：1.82req/s] [内存消耗：2,410.13kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:48+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019430s][吞吐率：51.47req/s] [内存消耗：1,635.00kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:48+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.046817s][吞吐率：21.36req/s] [内存消耗：2,512.26kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:40:48+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032051s][吞吐率：31.20req/s] [内存消耗：2,493.92kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:41:31+08:00 ] 120.24.212.12 113.65.189.0 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.041728s][吞吐率：23.96req/s] [内存消耗：2,539.55kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:41:49+08:00 ] 120.24.212.12 113.65.189.0 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.060671s][吞吐率：16.48req/s] [内存消耗：2,469.38kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:42:39+08:00 ] 120.24.212.12 113.65.189.0 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.033787s][吞吐率：29.60req/s] [内存消耗：2,502.81kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T10:43:07+08:00 ] 120.24.212.12 113.65.189.0 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.033575s][吞吐率：29.78req/s] [内存消耗：2,502.81kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T11:38:14+08:00 ] 120.24.212.12 223.104.21.54 GET /listing.php/index/index/index?from=timeline&isappinstalled=0
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=timeline&isappinstalled=0 [运行时间：0.019064s][吞吐率：52.46req/s] [内存消耗：1,655.50kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T11:38:15+08:00 ] 120.24.212.12 223.104.21.54 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017500s][吞吐率：57.14req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T12:20:31+08:00 ] 120.24.212.12 113.129.150.148 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.018956s][吞吐率：52.75req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T12:20:31+08:00 ] 120.24.212.12 113.129.150.148 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018471s][吞吐率：54.14req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T12:21:31+08:00 ] 120.24.212.12 58.247.212.98 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019185s][吞吐率：52.12req/s] [内存消耗：1,570.83kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:35+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.018952s][吞吐率：52.77req/s] [内存消耗：1,654.88kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:35+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017706s][吞吐率：56.48req/s] [内存消耗：1,571.22kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:38+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/Weixin/oauth?code=021qur271nBQiS10rQY619Ou271qur2j&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=021qur271nBQiS10rQY619Ou271qur2j&state=state [运行时间：0.472632s][吞吐率：2.12req/s] [内存消耗：2,409.46kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:38+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018789s][吞吐率：53.22req/s] [内存消耗：1,634.34kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:38+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.070645s][吞吐率：14.16req/s] [内存消耗：2,511.59kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:43:40+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032779s][吞吐率：30.51req/s] [内存消耗：2,493.91kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:44:16+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.043202s][吞吐率：23.15req/s] [内存消耗：2,539.41kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:44:30+08:00 ] 120.24.212.12 59.172.132.240 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.060995s][吞吐率：16.39req/s] [内存消耗：2,469.38kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:44:37+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/gift
+[ log ] haotaitai.hengdikeji.com/listing.php/gift [运行时间：0.035364s][吞吐率：28.28req/s] [内存消耗：2,529.64kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:44:54+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.033778s][吞吐率：29.60req/s] [内存消耗：2,550.77kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T13:44:55+08:00 ] 120.24.212.12 59.172.132.240 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031021s][吞吐率：32.24req/s] [内存消耗：2,493.91kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:42+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index [运行时间：0.020437s][吞吐率：48.93req/s] [内存消耗：1,655.52kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:42+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018389s][吞吐率：54.38req/s] [内存消耗：1,571.47kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:44+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/Weixin/oauth?code=061u0lwB1dGiNe0wAywB14HawB1u0lwC&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=061u0lwB1dGiNe0wAywB14HawB1u0lwC&state=state [运行时间：0.476290s][吞吐率：2.10req/s] [内存消耗：2,447.67kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:44+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.020660s][吞吐率：48.40req/s] [内存消耗：1,634.61kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:44+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.047377s][吞吐率：21.11req/s] [内存消耗：2,511.61kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:45+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/Weixin/oauth?code=081DWJ6v1HhHN90oaV9v1bfu6v1DWJ6d&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=081DWJ6v1HhHN90oaV9v1bfu6v1DWJ6d&state=state [运行时间：0.020081s][吞吐率：49.80req/s] [内存消耗：1,635.54kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:45+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.033735s][吞吐率：29.64req/s] [内存消耗：2,550.82kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:04:46+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031479s][吞吐率：31.77req/s] [内存消耗：2,493.98kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:05:17+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.032255s][吞吐率：31.00req/s] [内存消耗：2,550.98kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:05:18+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.030854s][吞吐率：32.41req/s] [内存消耗：2,493.98kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:05:49+08:00 ] 120.24.212.12 119.130.70.87 POST /listing.php/share.html
+[ log ] haotaitai.hengdikeji.com/listing.php/share.html [运行时间：0.121855s][吞吐率：8.21req/s] [内存消耗：2,464.48kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:06+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index?from=singlemessage&isappinstalled=0
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=singlemessage&isappinstalled=0 [运行时间：0.020275s][吞吐率：49.32req/s] [内存消耗：1,656.13kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:06+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018343s][吞吐率：54.52req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:07+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/Weixin/oauth?code=011OHBLX1uESkU0jMaKX1H8oLX1OHBLA&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=011OHBLX1uESkU0jMaKX1H8oLX1OHBLA&state=state [运行时间：0.419735s][吞吐率：2.38req/s] [内存消耗：2,447.52kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:07+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018954s][吞吐率：52.76req/s] [内存消耗：1,634.40kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:07+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.055331s][吞吐率：18.07req/s] [内存消耗：2,511.40kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:08+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032820s][吞吐率：30.47req/s] [内存消耗：2,493.75kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:06:39+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.042848s][吞吐率：23.34req/s] [内存消耗：2,539.29kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:07:03+08:00 ] 120.24.212.12 119.130.70.87 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.033931s][吞吐率：29.47req/s] [内存消耗：2,502.62kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:07:10+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index?from=singlemessage&isappinstalled=0
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=singlemessage&isappinstalled=0 [运行时间：0.033189s][吞吐率：30.13req/s] [内存消耗：2,551.24kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:07:10+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.032492s][吞吐率：30.78req/s] [内存消耗：2,493.75kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:07:47+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：2,539.41kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:40:31+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/index?from=singlemessage&isappinstalled=0
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=singlemessage&isappinstalled=0 [运行时间：0.032988s][吞吐率：30.31req/s] [内存消耗：2,551.24kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:40:32+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031615s][吞吐率：31.63req/s] [内存消耗：2,493.75kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:40:48+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/numbers
+[ log ] haotaitai.hengdikeji.com/listing.php/numbers [运行时间：0.045911s][吞吐率：21.78req/s] [内存消耗：2,539.41kb] [文件加载：58]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:40:59+08:00 ] 120.24.212.12 119.130.70.87 POST /listing.php/lottery2
+[ log ] haotaitai.hengdikeji.com/listing.php/lottery2 [运行时间：0.036663s][吞吐率：27.28req/s] [内存消耗：2,502.62kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T14:41:01+08:00 ] 120.24.212.12 119.130.70.87 GET /listing.php/gift
+[ log ] haotaitai.hengdikeji.com/listing.php/gift [运行时间：0.037367s][吞吐率：26.76req/s] [内存消耗：2,529.67kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:29+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.020774s][吞吐率：48.14req/s] [内存消耗：1,655.13kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:29+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018273s][吞吐率：54.73req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:31+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/Weixin/oauth?code=001KZH1g0eOgdy1KFQ1g0e7x1g0KZH1x&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=001KZH1g0eOgdy1KFQ1g0e7x1g0KZH1x&state=state [运行时间：0.486072s][吞吐率：2.06req/s] [内存消耗：2,409.70kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:31+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/Weixin/oauth?code=0611JEhE1HNjO00WRlgE1yzQhE11JEhL&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=0611JEhE1HNjO00WRlgE1yzQhE11JEhL&state=state [运行时间：0.193001s][吞吐率：5.18req/s] [内存消耗：1,635.23kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:31+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.045205s][吞吐率：22.12req/s] [内存消耗：2,511.80kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:31+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.032745s][吞吐率：30.54req/s] [内存消耗：2,550.77kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T16:17:33+08:00 ] 120.24.212.12 171.105.145.219 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.041022s][吞吐率：24.38req/s] [内存消耗：2,494.06kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T18:19:31+08:00 ] 120.24.212.12 117.136.39.103 GET /listing.php/index/index/index?from=timeline
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=timeline [运行时间：0.105572s][吞吐率：9.47req/s] [内存消耗：1,655.72kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T18:19:31+08:00 ] 120.24.212.12 117.136.39.103 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.030604s][吞吐率：32.68req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:10+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/index/index?from=singlemessage
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=singlemessage [运行时间：0.020451s][吞吐率：48.90req/s] [内存消耗：1,655.73kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:10+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.017924s][吞吐率：55.79req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:15+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/Weixin/oauth?code=01153s5f2GJLtA0DYe7f2epL5f253s5k&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=01153s5f2GJLtA0DYe7f2epL5f253s5k&state=state [运行时间：0.468451s][吞吐率：2.13req/s] [内存消耗：2,447.54kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:15+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019202s][吞吐率：52.08req/s] [内存消耗：1,634.41kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:15+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.049465s][吞吐率：20.22req/s] [内存消耗：2,511.64kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T19:42:17+08:00 ] 120.24.212.12 120.6.234.226 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031537s][吞吐率：31.71req/s] [内存消耗：2,493.97kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:25+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.019108s][吞吐率：52.33req/s] [内存消耗：1,655.13kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:25+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.018278s][吞吐率：54.71req/s] [内存消耗：1,571.34kb] [文件加载：43]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:29+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/Weixin/oauth?code=0218fYCW1IOLcT0KYkBW1OzZCW18fYCH&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=0218fYCW1IOLcT0KYkBW1OzZCW18fYCH&state=state [运行时间：0.447243s][吞吐率：2.24req/s] [内存消耗：2,409.57kb] [文件加载：55]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:29+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019094s][吞吐率：52.37req/s] [内存消耗：1,634.46kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:29+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.076439s][吞吐率：13.08req/s] [内存消耗：2,511.72kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:30+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/Weixin/oauth?code=001tozUz03Ujlg1zt0Vz0tvlUz0tozUo&state=state
+[ log ] haotaitai.hengdikeji.com/listing.php/index/Weixin/oauth?code=001tozUz03Ujlg1zt0Vz0tvlUz0tozUo&state=state [运行时间：0.019963s][吞吐率：50.09req/s] [内存消耗：1,635.45kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:30+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/index/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index.html [运行时间：0.035513s][吞吐率：28.16req/s] [内存消耗：2,550.74kb] [文件加载：60]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:43:31+08:00 ] 120.24.212.12 118.196.137.97 GET /listing.php/index/index/video.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/video.html [运行时间：0.031146s][吞吐率：32.11req/s] [内存消耗：2,494.03kb] [文件加载：59]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:48:39+08:00 ] 120.24.212.12 42.199.60.37 GET /listing.php/index/index/index?from=singlemessage
+[ log ] haotaitai.hengdikeji.com/listing.php/index/index/index?from=singlemessage [运行时间：0.019993s][吞吐率：50.02req/s] [内存消耗：1,656.10kb] [文件加载：47]
+
+---------------------------------------------------------------
+[ 2018-03-08T21:48:39+08:00 ] 120.24.212.12 42.199.60.37 GET /listing.php/index/weixin/index.html
+[ log ] haotaitai.hengdikeji.com/listing.php/index/weixin/index.html [运行时间：0.019252s][吞吐率：51.94req/s] [内存消耗：1,571.40kb] [文件加载：43]
+
+---------------------------------------------------------------

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection"/>
+		<title>好太太-上市</title>
+        <script type="text/javascript">
+        </script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background:url(__STYLE__/img/back.jpg) no-repeat;
+			}
+			#video{
+				position:fixed;
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				display: none;
+				z-index: 100;
+				object-position: center top;
+			}
+			#videoBack{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			    background:url(__STYLE__/img/back.jpg) no-repeat;
+			    background-size: cover;
+			    z-index: 1000;
+			    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				display: -webkit-flex;
+				-webkit-align-items: center;
+				-webkit-justify-content: center;
+				-webkit-flex-direction: column;
+			}
+			#videoBack img{
+				width: 64px;
+				opacity: 0.25;
+				-ms-transition: opacity 0.5s;
+				-webkit-transition: opacity 0.5s;
+				-moz-transition: opacity 0.5s;
+				transition: opacity 0.5s;
+			}
+			#videoBack p{
+				font-size: 14px;
+				text-align: center;
+				color: #faf2c1;
+				opacity: 0.8;
+				line-height: 28px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<video
+			id="video" 
+			src="__STYLE__/hotata.mp4"
+			preload="auto" 
+			webkit-playsinline="true" 
+			playsinline="true" 
+			x-webkit-airplay="allow" 
+			x5-video-player-type="h5" 
+			x5-video-player-fullscreen="true" 
+			x5-video-orientation="portraint"
+			style="object-fit:fill"
+		></video>
+		<div id="videoBack" style="display: none;">
+			<img src="__STYLE__/img/hands.png" />
+			<p>点击解锁更多惊喜</p>
+		</div>
+		<script>
+			function audioAutoPlay(id,v){
+			    var audio = document.getElementById(id);
+			    audio.play();
+			    if(v==0)
+			    {
+			    	audio.pause();
+			    }
+
+			    document.addEventListener("WeixinJSBridgeReady", function () {
+			            audio.play();
+			            if(v==0)
+					    {
+					    	audio.pause();
+					    }
+			    }, false);
+			}
+			audioAutoPlay('video',0);
+
+		</script>
+	</body>
+</html>
