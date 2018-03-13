@@ -17,7 +17,7 @@ return [
     // 数据库名
     'database'       => 'haotaitai2',//htt
     // 用户名
-    'username'       => 'root',//  xiaoqiang
+    'username'       => 'root',// xiaoqiang
     // 密码
     'password'       => '',//xiaoqiang250.
     // 端口

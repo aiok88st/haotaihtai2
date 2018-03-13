@@ -12,8 +12,6 @@ class Product extends Model
 //    protected $field = ['name', 'img', 'price','number','short','add_time'];
     protected $veri=[
         'name|名称' => 'require|max:255',
-        'number|库存' => 'require',
-        'img|图片' => 'require',
     ];
 
     public function add($param){

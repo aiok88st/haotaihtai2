@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"F:\wamp\www\htt\public/../application/admin2\view\product\index.html";i:1520404014;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;s:65:"F:\wamp\www\htt\public/../application/admin2\view\common\nav.html";i:1520391761;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"F:\wamp\www\htt\public/../application/admin2\view\product\index.html";i:1520843655;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;s:65:"F:\wamp\www\htt\public/../application/admin2\view\common\nav.html";i:1520391761;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -50,24 +50,24 @@
                 <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
             </form>
         </div>
-        <xblock>
-            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-            <button class="layui-btn" onclick="x_admin_show('添加换购券','<?php echo url('Product/create'); ?>')"><i class="layui-icon"></i>添加</button>
+        <!--<xblock>-->
+            <!--<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>-->
+            <!--<button class="layui-btn" onclick="x_admin_show('添加换购券','<?php echo url('Product/create'); ?>')"><i class="layui-icon"></i>添加</button>-->
 
-        </xblock>
+        <!--</xblock>-->
 
         <input class="layui-input" type="hidden" name="__token__" value="<?php echo $token; ?>">
         <table class="layui-table">
             <thead>
             <tr>
-                <th>
-                    <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
-                </th>
-                <th>图片</th>
+                <!--<th>-->
+                    <!--<div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>-->
+                <!--</th>-->
+                <!--<th>图片</th>-->
                 <th>换购券名称</th>
                 <th>价格</th>
-                <th>库存</th>
-                <th>简介</th>
+                <!--<th>库存</th>-->
+                <!--<th>简介</th>-->
                 <th>创建时间</th>
                 <th>操作</th>
             </tr>
@@ -75,22 +75,22 @@
             <tbody>
             <?php if(is_array($list) || $list instanceof \think\Collection): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                 <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<?php echo $vo['id']; ?>'><i class="layui-icon">&#xe605;</i></div>
-                    </td>
-                    <td><img src="__APP__<?php echo $vo['img']; ?>" width="100px"/></td>
+                    <!--<td>-->
+                        <!--<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<?php echo $vo['id']; ?>'><i class="layui-icon">&#xe605;</i></div>-->
+                    <!--</td>-->
+                    <!--<td><img src="__APP__<?php echo $vo['img']; ?>" width="100px"/></td>-->
                     <td><?php echo $vo['name']; ?></td>
                     <td><?php echo $vo['price']; ?></td>
-                    <td><?php echo $vo['number']; ?></td>
-                    <td><?php echo $vo['short']; ?></td>
+                    <!--<td><?php echo $vo['number']; ?></td>-->
+                    <!--<td><?php echo $vo['short']; ?></td>-->
                     <td><?php echo date("Y-m-d H:i:s",$vo['add_time']); ?></td>
                     <td class="td-manage" >
                         <a title="编辑"  onclick="x_admin_show('编辑换购券','<?php echo url('Product/edit',['id'=>$vo['id']]); ?>')" href="javascript:;">
                             编辑
                         </a>
-                        <a title="删除" onclick="delAll('<?php echo $vo['id']; ?>')" href="javascript:;">
-                            删除
-                        </a>
+                        <!--<a title="删除" onclick="delAll('<?php echo $vo['id']; ?>')" href="javascript:;">-->
+                            <!--删除-->
+                        <!--</a>-->
                     </td>
                 </tr>
             <?php endforeach; endif; else: echo "" ;endif; ?>

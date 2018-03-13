@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"F:\wamp\www\htt\public/../application/admin2\view\product\edit.html";i:1520308481;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"F:\wamp\www\htt\public/../application/admin2\view\product\edit.html";i:1520843616;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,41 +44,41 @@
                     </div>
                 </div>
             </div>
-            <div class="layui-form-item">
-                <label for="name" class="layui-form-label">
-                    <span class="x-red">*</span>库存
-                </label>
-                <div class="layui-input-inline">
-                    <div class="layui-input-inline">
-                        <input type="text" id="number" value="<?php echo $data['number']; ?>" name="number"
-                               autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="name" class="layui-form-label">
-                    <span class="x-red">*</span>简介
-                </label>
-                <div class="layui-input-inline">
-                    <div class="layui-input-inline">
-                        <input type="text" name="short" value="<?php echo $data['short']; ?>"
-                               autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label class="layui-form-label">图片</label>
-                <input type="hidden" name="img" id="logo" value="<?php echo $data['img']; ?>">
-                <div class="layui-input-block">
-                    <div class="layui-upload">
-                        <button type="button" class="layui-btn layui-btn-primary" id="logoBtn"><i class="icon icon-upload3"></i>点击上传</button>
-                        <div class="layui-upload-list" style="margin: 10px 12px;">
-                            <img class="layui-upload-img" id="cltLogo" width="100px" src="__APP__<?php echo $data['img']; ?>">
-                            <p id="demoText"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="layui-form-item">-->
+                <!--<label for="name" class="layui-form-label">-->
+                    <!--<span class="x-red">*</span>库存-->
+                <!--</label>-->
+                <!--<div class="layui-input-inline">-->
+                    <!--<div class="layui-input-inline">-->
+                        <!--<input type="text" id="number" value="<?php echo $data['number']; ?>" name="number"-->
+                               <!--autocomplete="off" class="layui-input">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="layui-form-item">-->
+                <!--<label for="name" class="layui-form-label">-->
+                    <!--<span class="x-red">*</span>简介-->
+                <!--</label>-->
+                <!--<div class="layui-input-inline">-->
+                    <!--<div class="layui-input-inline">-->
+                        <!--<input type="text" name="short" value="<?php echo $data['short']; ?>"-->
+                               <!--autocomplete="off" class="layui-input">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="layui-form-item">-->
+                <!--<label class="layui-form-label">图片</label>-->
+                <!--<input type="hidden" name="img" id="logo" value="<?php echo $data['img']; ?>">-->
+                <!--<div class="layui-input-block">-->
+                    <!--<div class="layui-upload">-->
+                        <!--<button type="button" class="layui-btn layui-btn-primary" id="logoBtn"><i class="icon icon-upload3"></i>点击上传</button>-->
+                        <!--<div class="layui-upload-list" style="margin: 10px 12px;">-->
+                            <!--<img class="layui-upload-img" id="cltLogo" width="100px" src="__APP__<?php echo $data['img']; ?>">-->
+                            <!--<p id="demoText"></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <div class="layui-form-item">
                 <button class="layui-btn" lay-submit="" lay-filter="add">提交</button>

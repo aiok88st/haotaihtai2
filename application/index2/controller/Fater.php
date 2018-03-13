@@ -11,7 +11,7 @@ class Fater extends Controller
     public function _initialize()
     {
         $member_id=session('user')['user_id'];
-        define('UID',1);
+        define('UID',$member_id);
         if(!UID){
             $this->redirect(url('weixin/index'));
         }

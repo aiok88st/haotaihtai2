@@ -29,18 +29,28 @@ class Index extends Fater
     {
         $rc=randChar(8);
         session('rc',$rc);
-        $p = $this->ticket();
         return view('',[
             'token'=>$request->token(),
             'cr'=>$rc,
-            'ticket'=>$p
         ]);
     }
-
     //换购券
-    public function ticket(){
-        $p = (new AdminProduct)->where('type',1)->order('id desc')->select();
+    public function my_ticket_status(AdminOrder $order){
+        $p1 = $order->where('pid',1)->where('open_id',UID)->value('status');
+        $p2 = $order->where('pid',2)->where('open_id',UID)->value('status');
+        $p = [$p1?$p1:0,$p2?$p2:0];
         return $p;
+    }
+    //我的订单
+    public function my_order(Request $request,AdminOrder $order){
+        $id=$request->param()['pid'];
+        $data=$order->where('pid',$id)->where('open_id',UID)->find();
+        if(!$data){
+            return json(['code' => 0, 'msg' => '查询的数据为空']);
+        }
+        if($data['old_img'])  $data['old_img']=unserialize($data['old_img']);
+        if($data['new_img'])  $data['new_img']=unserialize($data['new_img']);
+        return json_encode($data);
     }
     //使用换购券
     public function use_ticket(Request $request,AdminOrder $order){
@@ -53,7 +63,6 @@ class Index extends Fater
                     'pid|换购券' => 'require',
                     'city_code|城市代码' => 'require|max:255',
                     'new_brand|新款品牌'=>'require|max:255',
-//                    'new_img|旧款照片'=>'require',
                 ]);
             if (true !== $result) {
                 // 验证失败 输出错误信息
@@ -61,16 +70,61 @@ class Index extends Fater
             }
             $act = $order->where(['pid'=>$param['pid']])->where('open_id',UID)->find();
             if(!$act || $act['status'] != 1)return json(['code'=>0,'msg'=>'换购券不能使用']);
-            $data['status'] = 2;
-            $data['city_code'] = $param['city_code'];
-            $data['new_brand'] = $param['new_brand'];
-            $data['new_img'] = serialize($param['new_img']);
-            $data['use_time'] = date('Y-m-d H:i:s');
-            $order->where(['id'=>$act['id']])->update($data);
+
+            $act->use_time=date('Y-m-d H:i:s');
+            $act->status=2;
+            $act->city_code=$param['city_code'];
+            $act->new_brand=$param['new_brand'];
+            $act->save();
+
             return json(['code' => 1, 'msg' => '使用成功']);
         }catch (Exception $e){
             return json(['code'=>0,'msg'=>$e->getMessage()]);
         }
+    }
+    //评价
+    public function pj_ticket(Request $request,AdminOrder $order){
+        try{
+            $param=$request->param();
+            //规则
+            $result = $this->validate(
+                $param,
+                [
+                    'pid|换购券' => 'require',
+                    'proStar|产品满意度' => 'require',
+                    'serStar|服务满意度'=>'require',
+                    'content|意见反馈'=>'require|max:255',
+                    'new_img|新款图片'=>'require',
+                ]);
+            if (true !== $result) {
+                // 验证失败 输出错误信息
+                return json(['code' => 0, 'msg' => $result]);
+            }
+            $act = $order->where(['pid'=>$param['pid']])->where('open_id',UID)->find();
+            if(!$act)return json(['code'=>0,'msg'=>'查询的数据为空']);
+
+            $act->proStar=$param['proStar'];
+            $act->serStar=$param['serStar'];
+            $act->content=$param['content'];
+            $act->new_img=serialize($param['new_img']);
+            $act->status=3;
+            $act->save();
+            //增加抽奖次数
+            $open=AdminOpen::get(UID);
+            $open->where('id',UID)->setInc('draw',1);
+
+            return json(['code' => 1, 'msg' => '评价成功']);
+        }catch (Exception $e){
+            return json(['code'=>0,'msg'=>$e->getMessage()]);
+        }
+    }
+
+    //微信分享
+    public function jssdk_all(){
+        $wxapi=new \org\Wxapi;
+        $url=$_SERVER['HTTP_REFERER'];
+        $signPackage=$wxapi->getSignPackage($url);
+        return json($signPackage);
     }
 
 
@@ -213,6 +267,7 @@ class Index extends Fater
         }
         return $list;
     }
+    //兑换奖品
     public function change(Request $request,AdminLottery $adminLottery){
         try{
             $id=$request->post('id',0);
@@ -225,6 +280,7 @@ class Index extends Fater
             return rejson(0,'系统发生错误，兑换失败');
         }
     }
+    //敲钟人数
     public function numbers(AdminOpen $adminOpen){
         $number=$adminOpen->count();
         $value=db('admin_set')->where('id',1)->value('value');

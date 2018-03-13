@@ -2,7 +2,7 @@
 return [
 // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__STYLE__'=>__ROOT__.'/temp/index/index',
+        '__STYLE__'=>__ROOT__.'/temp/index2/index',
         '__ADMIN__'=>__ROOT__.'/static/admin',
 
     ],

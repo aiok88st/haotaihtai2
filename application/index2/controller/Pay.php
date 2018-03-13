@@ -27,7 +27,7 @@ class Pay extends Fater
         try{
             $param=$request->param();
             $rc = session('rc');
-            if($param['cr'] != $rc)return json(['code'=>0,'msg'=>'非法操作']);
+            if($param['cr'] != $rc)return json(['code'=>0,'msg'=>'网络错误，请关闭页面重新打开']);
             //规则
             $result = $this->validate(
                 $param,
@@ -36,7 +36,7 @@ class Pay extends Fater
                     'name|姓名' => 'require|max:255',
                     'phone|手机号码' => ['require', "regex:/^1[34578]{1}[0-9]{9}$/"],
                     'old_brand|旧款品牌'=>'require|max:255',
-//                    'old_img|旧款照片'=>'require',
+                    'old_img|旧款照片'=>'require',
                 ]);
             if (true !== $result) {
                 // 验证失败 输出错误信息
