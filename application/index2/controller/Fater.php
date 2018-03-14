@@ -11,7 +11,7 @@ class Fater extends Controller
     public function _initialize()
     {
         $member_id=session('user')['user_id'];
-        define('UID',$member_id);
+        define('UID',1);
         if(!UID){
             $this->redirect(url('weixin/index'));
         }
@@ -19,7 +19,7 @@ class Fater extends Controller
         $prize1=cache('prize1');
         if(!$prize1)cache('prize1',$all);
 
-        //活动时间、协议
+        //活动时间
         $this->site_info=cache('site_info');
         if(!$this->site_info){
             $sys=db('admin_system')->where('id',1)->find();
@@ -27,9 +27,9 @@ class Fater extends Controller
         }
 
 
-        if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') == false) {
-            return "<h1 style='font-size: 40px'>请用微信浏览器打开</h1>";
-        }
+//        if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') == false) {
+//            return "<h1 style='font-size: 40px'>请用微信浏览器打开</h1>";
+//        }
 
     }
 

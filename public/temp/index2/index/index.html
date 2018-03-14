@@ -23,7 +23,11 @@
             var pj="<{:url('Index/pj_ticket')}>";
             var weixinLink = "<{:url('Index/jssdk_all')}>";
 		</script>
-
+		<style>
+			#buyStep01 .inputBox p{
+				text-align: right;
+			}
+		</style>
 	</head>
 	<body>
 		<!--删除不良信息-->
@@ -251,7 +255,7 @@
 				<div class="inputBox">
 					<p>意见反馈：</p>
 					<div class="sgtext">
-						<textarea id="content" placeholder="您还可以输入200个字"></textarea>
+						<textarea id="content" placeholder="您还可以输入200个字符"></textarea>
 					</div>
 				</div>
 				<div class="nextBtn">

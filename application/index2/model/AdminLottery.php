@@ -61,6 +61,7 @@ class AdminLottery extends Model
                         $this_count=$this->where('prize_id',$value['id'])->count();
 
                         $day_count=$this->where('prize_id',$value['id'])->where('add_time','>= time',$today2)->count();
+
                         $my_count=$this->where('prize_id',$value['id'])->where('member_id',UID)->count();
 
                         if($this_count>=$value['number'] || $my_count>=$value['mld'] || $day_count>=$value['dl'])continue;
@@ -86,7 +87,7 @@ class AdminLottery extends Model
                     ];
                 }
             }
-            $l=get_rand($data); //获取中奖的奖品ID
+            $l=get_rand($data); //获取中奖的奖品ID,如果为积分则增加积分
             $this->save([
                 'prize_id'=>$l,
                 'group'=>1,

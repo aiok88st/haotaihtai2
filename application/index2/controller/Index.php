@@ -10,6 +10,7 @@ use app\index2\model\AdminShare;
 use app\index2\model\AdminLottery;
 use app\index2\model\AdminProduct;
 use app\index2\model\AdminOrder;
+use app\index2\model\AdminIntegral;
 class Index extends Fater
 {
 
@@ -114,6 +115,68 @@ class Index extends Fater
             $open->where('id',UID)->setInc('draw',1);
 
             return json(['code' => 1, 'msg' => '评价成功']);
+        }catch (Exception $e){
+            return json(['code'=>0,'msg'=>$e->getMessage()]);
+        }
+    }
+    //积分商品
+    public function sore_products(AdminProduct $product,AdminIntegral $integral){
+        $ps = $product->where('type',2)->select();
+        foreach($ps as $k=>$v){
+            $in = $integral->where('pid',$v['id'])->where('open_id',UID)->find();
+            $ps[$k]['status'] = $in?1:0;
+        }
+        //status 1已兑换 0未兑换
+        return json_encode($ps);
+    }
+    //兑换积分
+    public function addInt(Request $request,AdminIntegral $integral,AdminProduct $product,AdminOpen $open){
+        try{
+            $param=$request->param();
+            //规则
+            $result = $this->validate(
+                $param,
+                [
+                    'pid|积分商品' => 'require',
+                    'name|姓名' => 'require|max:255',
+                    'phone|手机号码' => ['require', "regex:/^1[34578]{1}[0-9]{9}$/"],
+                    'city|地区'=>'require|max:255',
+                    'addres|详细地址'=>'require|max:255',
+                ]);
+            if (true !== $result) {
+                // 验证失败 输出错误信息
+                return json(['code' => 0, 'msg' => $result]);
+            }
+            //是否已兑换
+            $act = $integral->where(['pid'=>$param['pid']])->where('open_id',UID)->find();
+            if($act)return json(['code'=>0,'msg'=>'该商品您已兑换']);
+            //没有就添加
+            $re = $integral->save([
+                'pid'=>$param['pid'],
+                'name' =>$param['name'],
+                'phone' =>$param['phone'],
+                'city' =>$param['city'],
+                'addres' =>$param['addres'],
+                'open_id' =>UID,
+                'IP' => request()->ip(),
+                'add_time'=>date('Y-m-d H:i:s')
+            ]);
+            if($re){
+                //兑换成功，商品减少
+                $p = $product::get($param['pid']);
+                $p->number=$p->number-1;
+                $p->save();
+                //减少积分
+                $need = $p->needIntegral;
+                $o = $open::get(UID);
+                $o->score=$p->score-$need;
+                $o->save();
+
+                return json(['code'=>1,'msg'=>'兑换成功','sy'=>$p->number,'su'=>$o->score]);
+            }else{
+                return json(['code'=>0,'msg'=>'网络错误，请稍后再试']);
+            }
+
         }catch (Exception $e){
             return json(['code'=>0,'msg'=>$e->getMessage()]);
         }
@@ -267,7 +330,6 @@ class Index extends Fater
         }
         return $list;
     }
-    //兑换奖品
     public function change(Request $request,AdminLottery $adminLottery){
         try{
             $id=$request->post('id',0);
@@ -280,7 +342,6 @@ class Index extends Fater
             return rejson(0,'系统发生错误，兑换失败');
         }
     }
-    //敲钟人数
     public function numbers(AdminOpen $adminOpen){
         $number=$adminOpen->count();
         $value=db('admin_set')->where('id',1)->value('value');
