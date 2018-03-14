@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\wamp\www\htt\public/../application/admin2\view\system\index.html";i:1520934059;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;s:65:"F:\wamp\www\htt\public/../application/admin2\view\common\nav.html";i:1520391761;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\wamp\www\htt\public/../application/admin2\view\system\index.html";i:1521012889;s:68:"F:\wamp\www\htt\public/../application/admin2\view\common\common.html";i:1520393002;s:65:"F:\wamp\www\htt\public/../application/admin2\view\common\nav.html";i:1520391761;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,7 +44,7 @@
     <div class="x-body">
         <form action="" method="post" class="layui-form layui-form-pane">
             <div class="layui-inline">
-                <label class="layui-form-label">开始时间</label>
+                <label class="layui-form-label" style="width: 130px;">开始时间</label>
                 <div class="layui-input-inline">
                     <input type="text" class="layui-input" name="begin_time" id="begin_time" value='<?php echo $system['begin_time']; ?>' placeholder="年-月-日">
                 </div>
@@ -53,16 +53,44 @@
                 <label>&nbsp;&nbsp;-&nbsp;&nbsp;</label>
             </div>
             <div class="layui-inline">
-                <label class="layui-form-label">结束时间</label>
+                <label class="layui-form-label" style="width: 130px;">结束时间</label>
                 <div class="layui-input-inline">
                     <input type="text" class="layui-input" name="end_time" id="end_time" value='<?php echo $system['end_time']; ?>' placeholder="年-月-日">
                 </div>
             </div>
 
             <div class="layui-form-item" style="margin-top: 15px">
-                <label  class="layui-form-label">系统公告</label>
+                <label  class="layui-form-label" style="width: 130px;">系统公告</label>
                 <div class="layui-input-inline">
                     <input type="text"  name="notice" required="" value='<?php echo $system['notice']; ?>' lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top: 15px">
+                <label  class="layui-form-label" style="width: 130px;">游戏第一关积分</label>
+                <div class="layui-input-inline">
+                    <input type="text"  name="game_one" required="" value='<?php echo $system['game_one']; ?>' lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top: 15px">
+                <label  class="layui-form-label" style="width: 130px;">游戏第二关积分</label>
+                <div class="layui-input-inline">
+                    <input type="text"  name="game_two" required="" value='<?php echo $system['game_two']; ?>' lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top: 15px">
+                <label  class="layui-form-label" style="width: 130px;">游戏第三关积分</label>
+                <div class="layui-input-inline">
+                    <input type="text"  name="game_three" required="" value='<?php echo $system['game_three']; ?>' lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top: 15px">
+                <label  class="layui-form-label" style="width: 130px;">过三关抽奖次数</label>
+                <div class="layui-input-inline">
+                    <input type="text"  name="game_award" required="" value='<?php echo $system['game_award']; ?>' lay-verify="required"
                            autocomplete="off" class="layui-input">
                 </div>
             </div>

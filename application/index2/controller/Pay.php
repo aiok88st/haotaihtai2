@@ -44,7 +44,7 @@ class Pay extends Fater
             }
             //是否已购买
             $act = $order->where(['pid'=>$param['pid']])->where('open_id',UID)->find();
-            if($act && $act['status'] != 0)return json(['code'=>0,'msg'=>'同一换购券只能购买一次']);
+            if($act && $act['status'] > 0)return json(['code'=>0,'msg'=>'同一换购券只能购买一次']);
             $outTradeNo = rand(1,9999).date("YmdHis").UID.$param['pid'];//订单号
             $order->save([
                 'pid'=>$param['pid'],

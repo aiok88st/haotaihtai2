@@ -14,6 +14,14 @@ class Tool{
         $this->export_url=$url.'?';
     }
 
+    //导出数据
+    public function export2($url){
+        $html=<<<EOF
+        <a href="{$url}"><button class="layui-btn">导出数据</button></a>
+EOF;
+        array_push($this->tool,$html);//e_csv
+    }
+
     public function export(){
         $html=<<<EOF
     

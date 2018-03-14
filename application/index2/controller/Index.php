@@ -17,15 +17,16 @@ class Index extends Fater
     public function _initialize()
     {
         parent::_initialize();
-//        $open=AdminOpen::get(UID);
-//        if($open['update_time']<time()){
-//            $open->update_time=strtotime(date('Y-m-d 23:59:59'));
-//            $open->count=1;
-//            $open->save();
-//        }
+        //重置游戏次数
+        $open=AdminOpen::get(UID);
+        if($open['update_time']<time()){
+            $open->update_time=strtotime(date('Y-m-d 23:59:59'));
+            $open->count=1;
+            $open->save();
+        }
     }
 
-
+    //首页
     public function index(Request $request,AdminProduct $product)
     {
         $rc=randChar(8);
@@ -129,7 +130,7 @@ class Index extends Fater
         //status 1已兑换 0未兑换
         return json_encode($ps);
     }
-    //兑换积分
+    //积分兑换
     public function addInt(Request $request,AdminIntegral $integral,AdminProduct $product,AdminOpen $open){
         try{
             $param=$request->param();
@@ -147,6 +148,11 @@ class Index extends Fater
                 // 验证失败 输出错误信息
                 return json(['code' => 0, 'msg' => $result]);
             }
+            //是否够兑换
+            $p = $product::get($param['pid']);
+            $o = $open::get(UID);
+            if($o->score < $p->needIntegral)return json(['code'=>0,'msg'=>'您的积分还不够兑换该商品']);
+
             //是否已兑换
             $act = $integral->where(['pid'=>$param['pid']])->where('open_id',UID)->find();
             if($act)return json(['code'=>0,'msg'=>'该商品您已兑换']);
@@ -163,16 +169,14 @@ class Index extends Fater
             ]);
             if($re){
                 //兑换成功，商品减少
-                $p = $product::get($param['pid']);
                 $p->number=$p->number-1;
                 $p->save();
                 //减少积分
                 $need = $p->needIntegral;
-                $o = $open::get(UID);
-                $o->score=$p->score-$need;
+                $o->score=$o->score-$need;
                 $o->save();
 
-                return json(['code'=>1,'msg'=>'兑换成功','sy'=>$p->number,'su'=>$o->score]);
+                return json(['code'=>1,'msg'=>'兑换成功','pNum'=>$p->number,'myScore'=>$o->score]);
             }else{
                 return json(['code'=>0,'msg'=>'网络错误，请稍后再试']);
             }
@@ -188,6 +192,31 @@ class Index extends Fater
         $url=$_SERVER['HTTP_REFERER'];
         $signPackage=$wxapi->getSignPackage($url);
         return json($signPackage);
+    }
+    //分享成功增加游戏次数
+    public function share(Request $request,AdminShare $adminShare){
+        try{
+            $group=input('group',1);
+            $today=strtotime(date('Y-m-d'));
+            $tc=$adminShare->where('member_id',UID)
+                ->where('add_time','>=',$today)
+                ->count();
+            $msg="分享成功";
+            if($tc<=0){
+                $open=AdminOpen::get(UID);
+                $open->count=$open->count+1;
+                $open->save();
+                $msg="分享成功，增加了一次机会";
+            }
+            $adminShare->save([
+                'group'=>$group,
+                'member_id'=>UID,
+                'add_time'=>time()
+            ]);
+            return rejson(1,$msg);
+        }catch (\Exception $e){
+            return rejson(0,$e->getMessage());
+        }
     }
 
 
@@ -260,32 +289,6 @@ class Index extends Fater
             return json(['code'=>0,'msg'=>$e->getMessage()]);
          
         }
-    }
-    public function share(Request $request,AdminShare $adminShare){
-        try{
-            $group=input('group',1);
-
-            $today=strtotime(date('Y-m-d'));
-            $tc=$adminShare->where('member_id',UID)
-                ->where('add_time','>=',$today)
-                ->count();
-            $msg="分享成功";
-            if($tc<=0){
-                $open=AdminOpen::get(UID);
-                $open->count=$open->count+1;
-                $open->save();
-                $msg="分享成功，增加了一次机会";
-            }
-            $adminShare->save([
-                'group'=>$group,
-                'member_id'=>UID,
-                'add_time'=>time()
-            ]);
-            return rejson(1,$msg);
-        }catch (\Exception $e){
-            return rejson(0,$e->getMessage());
-        }
-
     }
     public function gift(Request $request,AdminLottery $adminLottery){
         $data=$adminLottery::all(['member_id'=>UID,'prize_id'=>['NEQ',10]]);

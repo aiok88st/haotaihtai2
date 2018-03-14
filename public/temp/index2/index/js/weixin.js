@@ -26,7 +26,7 @@ $.ajax({
                 trigger: function (res) {
                 },
                 success: function (res) {
-                
+                    share(2);
                 },
                 cancel: function (res) {
                 },
@@ -42,6 +42,7 @@ $.ajax({
                 trigger: function (res) {
                 },
                 success: function (res) {
+                    share(1);
                 },
                 cancel: function (res) {
                 },
@@ -52,3 +53,11 @@ $.ajax({
         })
     }
 });
+
+function share(type){
+    var url="https://haotaitai.hengdikeji.com/listing.php/index2/index/share";
+    //请求后台
+    $.post(url,{"group":type}, function(res) {
+        popWin('温馨提示',res.msg);
+    });
+}

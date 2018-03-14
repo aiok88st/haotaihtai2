@@ -4,6 +4,7 @@ namespace app\admin2\controller;
 
 use think\Controller;
 use think\Request;
+use think\Cache;
 use app\common\controller\From;
 use app\admin2\model\System as SystemModel;
 class System extends Fater
@@ -21,6 +22,7 @@ class System extends Fater
         $param=$request->post();
         $re = $system->where('id',1)->update($param);
         if($re !== false){
+            Cache::clear();
             return json(['code'=>1,'msg'=>'设置成功']);
         }else{
             return json(['code'=>0,'msg'=>'设置失败']);
